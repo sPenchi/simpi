@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="7437f6f8-9a4d-43bb-82a6-2c904be9f7d2"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <useCase
+        Id="af40ceee-65b9-4a17-80ae-26907ee98e79"
+        name="Система обработки данных"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="255f15fb-4062-4b7f-aeff-45621fbae850"
+        name="Администрация"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="ae2afd64-5cd8-4fb4-a206-940b1fba1bf8"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="480d9149-09a3-41ac-b316-424b69c22974"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a350f51f-a67c-4353-b713-4768ce02ae86"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="999a4126-33ed-4633-afe2-29b6d8026b8a"
+                  LastKnownName="Система обработки данных"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="999a4126-33ed-4633-afe2-29b6d8026b8a"
+            name="Система обработки данных"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="438e5931-6550-4270-b5ce-3971891d649f"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="2cad2673-0a2a-4812-bb3c-c49959b8f793"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="2cad2673-0a2a-4812-bb3c-c49959b8f793"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5338cec-f216-4642-bb66-2749db406c88"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bf5a76c2-b273-41f4-a013-ff4605e1f7d0"
+                  LastKnownName="База данных"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f9ddf9bd-c086-4b7c-bc45-dcd5a4cd19a8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fdf3cbf9-6fdf-45b9-ae25-ae64db7398c2"
+                  LastKnownName="Отчеты"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <activityFinalNode
+            Id="768f0e19-85b4-4df0-a8c8-1a47bb975c56"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="0aa37d90-26e7-40b4-99af-08ec21f8ffad"
+            name="ActivityFinal3"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="6078ecbd-3400-473d-95b7-50524ee937de"
+            name="ActivityFinal4"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="b3c48359-2513-41e2-9d08-6471794c9d9c"
+            name="ActivityFinal5"
+            isLeaf="false" />
+          <opaqueAction
+            Id="c181e3dc-fddd-4f30-b67c-0d6aa5f722da"
+            name="Чтение с  БД о страховак"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="4ffcc81f-af70-4a16-b2a2-6e3f3885a4de"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="279f4b53-5947-42bf-9951-b7758d7966d1"
+                  LastKnownName="Виды страховок, стоимость и срок действия страховок "
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9b45e7aa-1ad1-44a3-8f00-03fbdf9dcd47"
+            name="Запись в БД о клиентах"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a6ebd5a3-9d60-42ce-a062-86654e28464d"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0aa37d90-26e7-40b4-99af-08ec21f8ffad"
+                  LastKnownName="ActivityFinal3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="b1a0cf9b-7295-475f-a133-110264213f7c"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7d41e2ad-6299-4e3d-8e22-3cde9a843069"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9b45e7aa-1ad1-44a3-8f00-03fbdf9dcd47"
+                  LastKnownName="Запись в БД о клиентах"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c360065f-36ef-4371-895c-32e9ade989bc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="449b97f3-62d7-4e95-ab92-0aa275b1061d"
+                  LastKnownName="Чтение с  БД"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="449b97f3-62d7-4e95-ab92-0aa275b1061d"
+            name="Чтение с  БД"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="429329a4-0e2c-4b56-ad02-843a06b04b56"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0aa37d90-26e7-40b4-99af-08ec21f8ffad"
+                  LastKnownName="ActivityFinal3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="279f4b53-5947-42bf-9951-b7758d7966d1"
+            name="Виды страховок, стоимость и срок действия страховок "
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="b4cd0796-5889-4f57-8f56-309d3bfcd2a6"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityFinalNodeMoniker
+                  Id="768f0e19-85b4-4df0-a8c8-1a47bb975c56"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="48bb301e-a266-44bc-8935-b31991e24e78"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="e1494111-0f9d-4458-a66f-cb10bc15ad57"
+            name="Запись в БД"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="485f1946-a507-4b6d-8d67-3524f628651b"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="597667cf-e613-4ca0-bd96-52844192cc36"
+                  LastKnownName="Fork2"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="597667cf-e613-4ca0-bd96-52844192cc36"
+            name="Fork2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c1230762-6569-4d24-95ed-14a09e864044"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="691eb5a4-42cb-4959-813a-6abe8a9dda61"
+                  LastKnownName="Предоставляемые услуги"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="aac9b771-73b3-4788-b8b0-39138eedbbad"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="20c3ae2b-341a-440a-bcff-51cb694bc1f3"
+                  LastKnownName="Совершенные сделки"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="20c3ae2b-341a-440a-bcff-51cb694bc1f3"
+            name="Совершенные сделки"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="82c73afe-c8f1-49c5-bba8-2fc9a93e41ce"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="6078ecbd-3400-473d-95b7-50524ee937de"
+                  LastKnownName="ActivityFinal4"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="691eb5a4-42cb-4959-813a-6abe8a9dda61"
+            name="Предоставляемые услуги"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1045d3e-0c3b-4479-bcfe-681e656a7472"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="6078ecbd-3400-473d-95b7-50524ee937de"
+                  LastKnownName="ActivityFinal4"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="6d67163b-b106-40fd-95dd-0095d62376fa"
+            name="Отчет о предоставленных услугах"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="3c924613-d2a5-46b0-a9a8-e79ef0eebfdc"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <activityFinalNodeMoniker
+                  Id="b3c48359-2513-41e2-9d08-6471794c9d9c"
+                  LastKnownName="ActivityFinal5"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="404a4ed4-ecad-4c4b-b05c-c26a7d45d736"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="bf5a76c2-b273-41f4-a013-ff4605e1f7d0"
+            name="База данных"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f47f6357-3c91-4fa9-99c7-a5c6eb9b3a8d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c181e3dc-fddd-4f30-b67c-0d6aa5f722da"
+                  LastKnownName="Чтение с  БД о страховак"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="428365b3-97da-4126-8655-769c8e287138"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b1a0cf9b-7295-475f-a133-110264213f7c"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4c9c0e9c-e560-45a2-a450-dc0d82f0e168"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e1494111-0f9d-4458-a66f-cb10bc15ad57"
+                  LastKnownName="Запись в БД"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fdf3cbf9-6fdf-45b9-ae25-ae64db7398c2"
+            name="Отчеты"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9aff507a-5685-486e-a44e-8d0672a09b2f"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="1b638870-770a-4289-85d4-b0e1f2bdbf08"
+                  LastKnownName="Fork3"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="1b638870-770a-4289-85d4-b0e1f2bdbf08"
+            name="Fork3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8b299161-709e-4e54-937e-316c46fb5695"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="94e4981c-c5ea-4b0d-97b4-c28f56ec11d9"
+                  LastKnownName="Бланк страхования"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="041dc4b1-eb82-405e-ab7a-0331c15d9478"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dae0af02-b850-4f29-8f44-7bfe9467d94d"
+                  LastKnownName="Прайс-лист по видам страховки"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="94e4981c-c5ea-4b0d-97b4-c28f56ec11d9"
+            name="Бланк страхования"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="00eb3530-ff61-4573-9141-da3c40a07ce2"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="6d67163b-b106-40fd-95dd-0095d62376fa"
+                  LastKnownName="Отчет о предоставленных услугах"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dae0af02-b850-4f29-8f44-7bfe9467d94d"
+            name="Прайс-лист по видам страховки"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="79a27758-677c-4d1a-851c-6df40dff747a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="6d67163b-b106-40fd-95dd-0095d62376fa"
+                  LastKnownName="Отчет о предоставленных услугах"
+                  LastKnownLocation="ModelingProject1.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

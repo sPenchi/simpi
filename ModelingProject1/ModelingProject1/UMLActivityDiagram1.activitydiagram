@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="1f06e801-ed27-4b82-8c19-c139723cb3cb" name="Activity1" linkedPackageId="4eff0368-c08f-4d8f-a63e-717b86b597b5" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="d38eca5a-a3fe-4071-89a2-56671f1d5b91" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ae2afd64-5cd8-4fb4-a206-940b1fba1bf8" />
+        <nodes>
+          <initialNode Id="82ecd30b-0ff2-4b20-831d-d6da67a88c44" name="Initial1" isLeaf="false">
+            <elementDefinition Id="480d9149-09a3-41ac-b316-424b69c22974" />
+            <flowNodeTargets>
+              <controlFlow Id="88c946e3-d9fb-4eba-85a1-00f261c19107" isLeaf="false">
+                <opaqueActionMoniker Id="81d2d6be-2cb8-4015-80bf-cb25eaacbd55" LastKnownName="Система обработки данных" />
+                <elementDefinition Id="a350f51f-a67c-4353-b713-4768ce02ae86" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="81d2d6be-2cb8-4015-80bf-cb25eaacbd55" name="Система обработки данных" isLeaf="false">
+            <elementDefinition Id="999a4126-33ed-4633-afe2-29b6d8026b8a" />
+            <flowNodeTargets>
+              <controlFlow Id="7cf9844f-053d-4db7-b4e2-09654955ac57" isLeaf="false">
+                <forkNodeMoniker Id="bd3ad149-5e2d-4ab5-94fd-459e40c4dcfa" LastKnownName="Fork1" />
+                <elementDefinition Id="438e5931-6550-4270-b5ce-3971891d649f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="bd3ad149-5e2d-4ab5-94fd-459e40c4dcfa" name="Fork1" isLeaf="false">
+            <elementDefinition Id="2cad2673-0a2a-4812-bb3c-c49959b8f793" />
+            <flowNodeTargets>
+              <controlFlow Id="ba1826e2-ea7f-486a-a5f5-4b69f4841d3d" isLeaf="false">
+                <opaqueActionMoniker Id="62fa8117-2e5d-415f-9c20-ad55e2b09ac7" LastKnownName="База данных" />
+                <elementDefinition Id="f5338cec-f216-4642-bb66-2749db406c88" />
+              </controlFlow>
+              <controlFlow Id="fd43e243-c5a6-4f05-9d78-a8744e66ac6b" isLeaf="false">
+                <opaqueActionMoniker Id="bd2205db-7d66-4b0a-af73-d604f0d65139" LastKnownName="Отчеты" />
+                <elementDefinition Id="f9ddf9bd-c086-4b7c-bc45-dcd5a4cd19a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <activityFinalNode Id="23a534f3-802d-4dc8-9bff-cf473d300f26" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="768f0e19-85b4-4df0-a8c8-1a47bb975c56" />
+          </activityFinalNode>
+          <activityFinalNode Id="6e012101-3880-4e64-ba5e-047cb41ee605" name="ActivityFinal3" isLeaf="false">
+            <elementDefinition Id="0aa37d90-26e7-40b4-99af-08ec21f8ffad" />
+          </activityFinalNode>
+          <activityFinalNode Id="a898f716-0b0e-481c-bd4c-3c2b671243cc" name="ActivityFinal4" isLeaf="false">
+            <elementDefinition Id="6078ecbd-3400-473d-95b7-50524ee937de" />
+          </activityFinalNode>
+          <activityFinalNode Id="0bb07938-4793-4779-991c-14d3a7bb0fca" name="ActivityFinal5" isLeaf="false">
+            <elementDefinition Id="b3c48359-2513-41e2-9d08-6471794c9d9c" />
+          </activityFinalNode>
+          <opaqueAction Id="b5ab6e96-a37e-416d-96e1-e606a566329e" name="Чтение с  БД о страховак" isLeaf="false">
+            <elementDefinition Id="c181e3dc-fddd-4f30-b67c-0d6aa5f722da" />
+            <objectFlowTargets>
+              <objectFlow Id="aba8ffa6-ded7-47b3-a78e-e350ff465524" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="d6211970-c407-4ba6-b5a0-29e663084200" LastKnownName="Виды страховок, стоимость и срок действия страховок " />
+                <elementDefinition Id="4ffcc81f-af70-4a16-b2a2-6e3f3885a4de" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="435fde0f-3592-4c7f-b80f-210bc225f744" name="Запись в БД о клиентах" isLeaf="false">
+            <elementDefinition Id="9b45e7aa-1ad1-44a3-8f00-03fbdf9dcd47" />
+            <flowNodeTargets>
+              <controlFlow Id="c2acc6c3-afcd-4898-8cef-253282c0e5ac" isLeaf="false">
+                <activityFinalNodeMoniker Id="6e012101-3880-4e64-ba5e-047cb41ee605" LastKnownName="ActivityFinal3" />
+                <elementDefinition Id="a6ebd5a3-9d60-42ce-a062-86654e28464d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="e10a3a1e-b3c3-4cf0-929c-bce56fc5c1ec" name="Decision1" isLeaf="false">
+            <elementDefinition Id="b1a0cf9b-7295-475f-a133-110264213f7c" />
+            <flowNodeTargets>
+              <controlFlow Id="2e3b8c19-52a5-456b-8556-3dede0a417f3" isLeaf="false">
+                <opaqueActionMoniker Id="435fde0f-3592-4c7f-b80f-210bc225f744" LastKnownName="Запись в БД о клиентах" />
+                <elementDefinition Id="7d41e2ad-6299-4e3d-8e22-3cde9a843069" />
+              </controlFlow>
+              <controlFlow Id="92b5dabf-744e-4031-b079-aed167b0fd9e" isLeaf="false">
+                <opaqueActionMoniker Id="6ac13649-7e53-4216-89ba-f561d1cb385b" LastKnownName="Чтение с  БД" />
+                <elementDefinition Id="c360065f-36ef-4371-895c-32e9ade989bc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="6ac13649-7e53-4216-89ba-f561d1cb385b" name="Чтение с  БД" isLeaf="false">
+            <elementDefinition Id="449b97f3-62d7-4e95-ab92-0aa275b1061d" />
+            <flowNodeTargets>
+              <controlFlow Id="fa0980df-2a0f-4242-97d5-d47b51888268" isLeaf="false">
+                <activityFinalNodeMoniker Id="6e012101-3880-4e64-ba5e-047cb41ee605" LastKnownName="ActivityFinal3" />
+                <elementDefinition Id="429329a4-0e2c-4b56-ad02-843a06b04b56" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="d6211970-c407-4ba6-b5a0-29e663084200" name="Виды страховок, стоимость и срок действия страховок " isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="279f4b53-5947-42bf-9951-b7758d7966d1" />
+            <objectFlowTargets>
+              <objectFlow Id="4cf12345-18dc-4747-b815-28806244db81" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityFinalNodeMoniker Id="23a534f3-802d-4dc8-9bff-cf473d300f26" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="b4cd0796-5889-4f57-8f56-309d3bfcd2a6" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="8be3d781-faa7-4733-9c23-379e7ef6dc17" name="2147483647" value="2147483647">
+                <elementDefinition Id="48bb301e-a266-44bc-8935-b31991e24e78" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="e76675f3-14db-4ed4-89c8-64d63cced70c" name="Запись в БД" isLeaf="false">
+            <elementDefinition Id="e1494111-0f9d-4458-a66f-cb10bc15ad57" />
+            <flowNodeTargets>
+              <controlFlow Id="9d44b2d8-4d8c-4a4c-bca9-5f3f52ca70fc" isLeaf="false">
+                <forkNodeMoniker Id="f1785310-eae3-4ac7-abab-29dec7e0021f" LastKnownName="Fork2" />
+                <elementDefinition Id="485f1946-a507-4b6d-8d67-3524f628651b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="f1785310-eae3-4ac7-abab-29dec7e0021f" name="Fork2" isLeaf="false">
+            <elementDefinition Id="597667cf-e613-4ca0-bd96-52844192cc36" />
+            <flowNodeTargets>
+              <controlFlow Id="116a1217-1b4b-4c44-b993-e97a00041021" isLeaf="false">
+                <opaqueActionMoniker Id="0fbad4b5-e3aa-4f93-acbf-f8a6391a6a82" LastKnownName="Предоставляемые услуги" />
+                <elementDefinition Id="c1230762-6569-4d24-95ed-14a09e864044" />
+              </controlFlow>
+              <controlFlow Id="1e0ac089-b8b0-4d2a-9aa8-b902d1798383" isLeaf="false">
+                <opaqueActionMoniker Id="bbf64109-a226-4bc9-b51a-93f585ccccbe" LastKnownName="Совершенные сделки" />
+                <elementDefinition Id="aac9b771-73b3-4788-b8b0-39138eedbbad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="bbf64109-a226-4bc9-b51a-93f585ccccbe" name="Совершенные сделки" isLeaf="false">
+            <elementDefinition Id="20c3ae2b-341a-440a-bcff-51cb694bc1f3" />
+            <flowNodeTargets>
+              <controlFlow Id="ca07268c-abbf-4e8c-adc8-30c7952337f3" isLeaf="false">
+                <activityFinalNodeMoniker Id="a898f716-0b0e-481c-bd4c-3c2b671243cc" LastKnownName="ActivityFinal4" />
+                <elementDefinition Id="82c73afe-c8f1-49c5-bba8-2fc9a93e41ce" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="0fbad4b5-e3aa-4f93-acbf-f8a6391a6a82" name="Предоставляемые услуги" isLeaf="false">
+            <elementDefinition Id="691eb5a4-42cb-4959-813a-6abe8a9dda61" />
+            <flowNodeTargets>
+              <controlFlow Id="6fa0663f-0e90-450e-b059-10661203fe20" isLeaf="false">
+                <activityFinalNodeMoniker Id="a898f716-0b0e-481c-bd4c-3c2b671243cc" LastKnownName="ActivityFinal4" />
+                <elementDefinition Id="a1045d3e-0c3b-4479-bcfe-681e656a7472" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="c9ad09bb-58aa-4763-ab92-79fa383eafa6" name="Отчет о предоставленных услугах" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="6d67163b-b106-40fd-95dd-0095d62376fa" />
+            <objectFlowTargets>
+              <objectFlow Id="6744629b-921d-49bf-be8f-a6e4e6b0a3f3" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <activityFinalNodeMoniker Id="0bb07938-4793-4779-991c-14d3a7bb0fca" LastKnownName="ActivityFinal5" />
+                <elementDefinition Id="3c924613-d2a5-46b0-a9a8-e79ef0eebfdc" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="70c9ae6e-c649-4d59-8fc8-c890b49c9134" name="2147483647" value="2147483647">
+                <elementDefinition Id="404a4ed4-ecad-4c4b-b05c-c26a7d45d736" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="62fa8117-2e5d-415f-9c20-ad55e2b09ac7" name="База данных" isLeaf="false">
+            <elementDefinition Id="bf5a76c2-b273-41f4-a013-ff4605e1f7d0" />
+            <flowNodeTargets>
+              <controlFlow Id="7ac8a31c-91db-4e3e-9883-efc98978c06b" isLeaf="false">
+                <opaqueActionMoniker Id="b5ab6e96-a37e-416d-96e1-e606a566329e" LastKnownName="Чтение с  БД о страховак" />
+                <elementDefinition Id="f47f6357-3c91-4fa9-99c7-a5c6eb9b3a8d" />
+              </controlFlow>
+              <controlFlow Id="7153a6f2-01ad-4586-b01a-944322dd0919" isLeaf="false">
+                <decisionNodeMoniker Id="e10a3a1e-b3c3-4cf0-929c-bce56fc5c1ec" LastKnownName="Decision1" />
+                <elementDefinition Id="428365b3-97da-4126-8655-769c8e287138" />
+              </controlFlow>
+              <controlFlow Id="b0f57ddc-fbb7-46f5-96de-9f80700f0f14" isLeaf="false">
+                <opaqueActionMoniker Id="e76675f3-14db-4ed4-89c8-64d63cced70c" LastKnownName="Запись в БД" />
+                <elementDefinition Id="4c9c0e9c-e560-45a2-a450-dc0d82f0e168" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bd2205db-7d66-4b0a-af73-d604f0d65139" name="Отчеты" isLeaf="false">
+            <elementDefinition Id="fdf3cbf9-6fdf-45b9-ae25-ae64db7398c2" />
+            <flowNodeTargets>
+              <controlFlow Id="a97e5444-661f-4e4d-be1c-290414980089" isLeaf="false">
+                <forkNodeMoniker Id="5917632e-2bd9-49ff-bbdc-919a0283b788" LastKnownName="Fork3" />
+                <elementDefinition Id="9aff507a-5685-486e-a44e-8d0672a09b2f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="5917632e-2bd9-49ff-bbdc-919a0283b788" name="Fork3" isLeaf="false">
+            <elementDefinition Id="1b638870-770a-4289-85d4-b0e1f2bdbf08" />
+            <flowNodeTargets>
+              <controlFlow Id="2d234c1d-75b5-4aa0-9060-91a347de6f2d" isLeaf="false">
+                <opaqueActionMoniker Id="7db7a3b9-4a72-4bbd-81d3-be97b341dfdf" LastKnownName="Бланк страхования" />
+                <elementDefinition Id="8b299161-709e-4e54-937e-316c46fb5695" />
+              </controlFlow>
+              <controlFlow Id="aaaebcd7-848c-4d55-aeb9-6fe9995e8336" isLeaf="false">
+                <opaqueActionMoniker Id="b6437dbc-6b34-42b1-b628-14c166701d18" LastKnownName="Прайс-лист по видам страховки" />
+                <elementDefinition Id="041dc4b1-eb82-405e-ab7a-0331c15d9478" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="7db7a3b9-4a72-4bbd-81d3-be97b341dfdf" name="Бланк страхования" isLeaf="false">
+            <elementDefinition Id="94e4981c-c5ea-4b0d-97b4-c28f56ec11d9" />
+            <objectFlowTargets>
+              <objectFlow Id="c8d2d1c9-c53b-4943-b50f-aabcc1b97374" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="c9ad09bb-58aa-4763-ab92-79fa383eafa6" LastKnownName="Отчет о предоставленных услугах" />
+                <elementDefinition Id="00eb3530-ff61-4573-9141-da3c40a07ce2" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="b6437dbc-6b34-42b1-b628-14c166701d18" name="Прайс-лист по видам страховки" isLeaf="false">
+            <elementDefinition Id="dae0af02-b850-4f29-8f44-7bfe9467d94d" />
+            <objectFlowTargets>
+              <objectFlow Id="58ac977a-76c0-475b-81f1-624fe3e9ef4b" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="c9ad09bb-58aa-4763-ab92-79fa383eafa6" LastKnownName="Отчет о предоставленных услугах" />
+                <elementDefinition Id="79a27758-677c-4d1a-851c-6df40dff747a" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+    <packageHasNamedElement>
+      <referencedType Id="6a2412f2-1c4f-4dc0-991c-bd3dbd51446e" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c2869aa7-71f1-40c7-95f7-d7581fc7ed0d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="4eff0368-c08f-4d8f-a63e-717b86b597b5" name="ModelingProject1">
+    <elementDefinition Id="7437f6f8-9a4d-43bb-82a6-2c904be9f7d2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="641e645c-2e5e-401c-9ab0-da71569bd42f">
+        <profileInstance Id="2745b66e-b81b-4e16-82bc-ccff9c1c2526" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7464da7a-b481-485d-a3b6-ac4e5532c5ce">
+        <profileInstance Id="0688d373-d3a9-45a6-857b-8f06214ca31a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
