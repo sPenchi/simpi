@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0321cdc8-a6df-423a-b0b8-7f86f9ac8d04" name="UMLUseCaseDiagram1" linkedPackageId="36247de3-ce19-4fb2-8bc2-18e701ad24ed" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="1e42ac6c-b36d-4944-b292-842e1effa169">
+      <profileInstance Id="a949c4f4-b2ba-44a6-955a-f3f2f8a98fb9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="60a00300-be84-4e9d-a845-a977068ecec9">
+      <profileInstance Id="304cc3ec-15e9-4008-9c84-f18c1820d6e2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e86c0db3-214a-4935-a90d-36596db1382b" name="Страховая компания" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1581d6ea-077b-48ae-953f-70755875e57d" />
+        <targetEnds>
+          <association Id="037a9658-50a3-4b42-93e0-24c5991a6db0" isDerived="false" sourceEndRoleName="Страховая компания" targetEndRoleName="База данных" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8929cb75-dd32-40a0-8bad-c1b79da7ca41" LastKnownName="База данных" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0650512c-3952-45a9-80c5-9cd8185288b5" name="Страховая компания" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ede50d0b-e806-4d60-a127-506932418236" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d89f04ab-c8c3-43ae-9c6f-6058ada98137" name="База данных" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a5b6400a-e322-4005-87e1-eadf9d3d0e86" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d656dcf2-862b-474b-9e09-c7023a48bfb3" />
+          </association>
+          <association Id="4b42a792-096f-4e22-9308-f901c7a4a48a" isDerived="false" sourceEndRoleName="Страховая компания" targetEndRoleName="Отчеты" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="732118db-2cc5-4221-b4de-e5a3739564ef" LastKnownName="Отчеты" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68fd67c2-2749-4f8c-b0b5-668b7d2ce2f1" name="Страховая компания" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="95d245db-d41b-43b7-a1b2-9b20c78e297f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d94decd5-604d-4549-96d1-5b0f58df71ed" name="Отчеты" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e8430906-572b-44e9-982a-c16b226cba71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6ab28c9c-0084-488f-b5e1-4390abec4a5f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8929cb75-dd32-40a0-8bad-c1b79da7ca41" name="База данных" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14c7d9ac-4c57-466e-834d-f594648da2df" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="732118db-2cc5-4221-b4de-e5a3739564ef" name="Отчеты" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f29b1c65-4cb5-4580-b50e-ee4a5af6fe63" />
+        <targetEnds>
+          <association Id="727b2a65-6951-49ea-b09b-b63c83fe1efb" isDerived="false" sourceEndRoleName="Отчеты" targetEndRoleName="Информация о клиентах" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f78f59cd-c692-4e58-842d-d35cba049555" LastKnownName="Информация о клиентах" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b6b51cf-0a61-4baf-8b79-2892f2f6819c" name="Отчеты" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="489738e1-4fb9-4b0e-8b46-336cb91013ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9c16be0-b440-43ad-856f-539170deba02" name="Информация о клиентах" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e14b6ff2-0c45-41de-87dd-674f2230aaba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e41e0d22-4c03-49ff-8b18-78bf90c8d4ba" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a7387576-4d85-45b0-9c8a-055c00b2ccf7" name="Виды страховок, стоимость и срок действия страховок " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc4e3cb5-1a4a-457e-a1fa-c3eda898308a" />
+        <suppliersInternal>
+          <dependency Id="23d22640-41bf-48d9-b401-6440a310ff3b">
+            <useCaseMoniker Id="8929cb75-dd32-40a0-8bad-c1b79da7ca41" LastKnownName="База данных" />
+            <elementDefinition Id="d2856ab5-18ea-405c-84c1-2ce376573357" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f78f59cd-c692-4e58-842d-d35cba049555" name="Информация о клиентах" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a1c472bf-bd5e-4e08-9d27-81cfbb2a9006" />
+        <suppliersInternal>
+          <dependency Id="62e051b5-cb3e-4efc-a24c-e595678e07f8">
+            <useCaseMoniker Id="8929cb75-dd32-40a0-8bad-c1b79da7ca41" LastKnownName="База данных" />
+            <elementDefinition Id="fccfbced-1535-4b0b-a34b-256abc8c7fb4" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="250a011b-1d51-4c48-9e4d-ee27ac6d913b" name="Совершенные сделки" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed1e07b4-70de-4fdc-997d-465829e917b4" />
+        <suppliersInternal>
+          <dependency Id="a912e051-a161-4f2f-b940-18a1b8ec27fd">
+            <useCaseMoniker Id="8929cb75-dd32-40a0-8bad-c1b79da7ca41" LastKnownName="База данных" />
+            <elementDefinition Id="64e20faa-0654-43aa-9d08-46b00fa10d1b" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ccba69ad-507d-47be-b9cd-53a5200018d4" name="Клиент" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="be21e630-6f1b-4481-94d8-37aa8c04d61b" />
+        <targetEnds>
+          <association Id="979c22c1-019c-4e02-bbc8-8074d6a6a563" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Виды страховок, стоимость и срок действия страховок " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a7387576-4d85-45b0-9c8a-055c00b2ccf7" LastKnownName="Виды страховок, стоимость и срок действия страховок " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aefad603-34e6-4d23-a647-339bf1f9e10d" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e985191-90ad-4e81-9084-9e283e043abe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8511b4d3-fed3-4c29-bb3d-83b1cd4a6837" name="Виды страховок, стоимость и срок действия страховок " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="efd53a1c-1d33-4d09-933c-7f5e0891b5b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55488711-8e43-413e-9bf5-0881e0c4a714" />
+          </association>
+          <association Id="8414c9c9-7864-4dac-be0d-073bdbd57951" isDerived="false" sourceEndRoleName="Клиент" targetEndRoleName="Прайс-лист по видам страховки" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8ca3789a-d8ff-473d-8967-9b91e150fae4" LastKnownName="Прайс-лист по видам страховки" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb2e6a1f-aee5-4a2a-92b8-d34eff84d6e2" name="Клиент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3b03e1a3-8027-438c-bef5-327b752f1a27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36a8cf50-7bcd-4d92-96c9-92ffb8792a1c" name="Прайс-лист по видам страховки" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8a03a06-2407-408b-b8ae-91b2334f6beb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa2e6f8d-c40c-476e-9bcb-751fa4e05e8c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8ca3789a-d8ff-473d-8967-9b91e150fae4" name="Прайс-лист по видам страховки" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e0319e9-3a46-494e-a92e-ff85ae91ec7d" />
+        <suppliersInternal>
+          <dependency Id="ca234fda-c0dc-474c-af9e-a604944150b9">
+            <useCaseMoniker Id="732118db-2cc5-4221-b4de-e5a3739564ef" LastKnownName="Отчеты" />
+            <elementDefinition Id="3a5e4cc8-39c9-4896-8fec-6a4f013a8c5b" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a56a77f8-b4ae-477c-b631-1fcf6c4c6661" name="Бланк страхования" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ab5f4ff8-497d-4490-a732-aaf4ca5a4e91" />
+        <suppliersInternal>
+          <dependency Id="cfc3ef42-8fba-4704-9cba-f1d48818d9f5">
+            <useCaseMoniker Id="732118db-2cc5-4221-b4de-e5a3739564ef" LastKnownName="Отчеты" />
+            <elementDefinition Id="9d19dd8e-7a53-4af4-8cb6-5911d2f20924" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="36247de3-ce19-4fb2-8bc2-18e701ad24ed" name="ЛАБА 1">
+    <elementDefinition Id="eee89629-d8a9-48fd-b802-e7ea87c53e26" />
+  </package>
+</useCaseModelRoot>
